@@ -1,0 +1,35 @@
+{
+  "name": "sajt",
+  "version": "1.0.0",
+  "description": "blog app\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[Cmern blog app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nemanja-sta/blogApp.git"
+  },
+  "author": "Nemanja Stanisavljevic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nemanja-sta/blogApp/issues"
+  },
+  "homepage": "https://github.com/nemanja-sta/blogApp#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.15",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "validator": "^13.1.17"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
