@@ -1,9 +1,9 @@
 const express = require('express');
+const router = express.Router;
 require("dotenv").config(); // for loading environment variables
 const bodyParser = require("body-parser");
 const mongoose = require('mongoose');
 const app = express();
-const PORT = process.env.PORT || 5000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended : false}));
@@ -17,6 +17,8 @@ app.post("/user", (req, res) => {
     res.send(req.body);
 });
 
+app.use("/api/users/", require("./routes/api/user"));
+
 //Database Connect
 const MONGO_URI = process.env.MONGO_URI;
 mongoose.connect(MONGO_URI, { useUnifiedTopology: true })
@@ -24,6 +26,6 @@ mongoose.connect(MONGO_URI, { useUnifiedTopology: true })
 .catch(err => console.log("err"));
 
 //Port Connect
-app.listen(PORT, () => {
-  console.log(`Server up and running on port ${PORT}`);
+app.listen(5000, () => {
+  console.log(`Server up and running on port 5000`);
 });    
